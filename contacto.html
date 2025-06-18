@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário de Inscrição</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="prices-page">
+
+  <header class="modern-header">
+    <div class="container header-inner">
+      <div class="logo-area">
+        <a href="index.html" class="brand-name">EDUSPARK</a>
+      </div>
+      <nav class="nav-area">
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="prices.html">Planos</a></li>
+          <li><a href="signup.html">Sign Up</a></li> 
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="form-section">
+    <h1 class="form-title">Formulário de Inscrição</h1>
+    <form action="#" method="post" class="glass-form">
+
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="data">Data de Nascimento:</label>
+      <input type="date" id="data" name="data" required>
+
+      <fieldset>
+        <legend>Género:</legend>
+        <label><input type="radio" name="genero" value="masculino" required> Masculino</label>
+        <label><input type="radio" name="genero" value="feminino"> Feminino</label>
+        <label><input type="radio" name="genero" value="outro"> Outro</label>
+      </fieldset>
+
+      <label for="area">Área de Interesse:</label>
+      <select id="area" name="area" required>
+        <option value="">-- Seleciona --</option>
+        <option value="programacao">Programação</option>
+        <option value="design">Design</option>
+        <option value="marketing">Marketing</option>
+      </select>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+
+      <label class="checkbox-label">
+        <input type="checkbox" name="aceito" required>
+        Aceito os termos e condições
+      </label>
+
+      <button type="submit" class="select-btn">Submeter</button>
+    </form>
+  </main>
+
+</body>
+</html>
